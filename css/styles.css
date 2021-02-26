@@ -116,7 +116,7 @@ nav a {
 
 nav a:hover {
   color: #2B2D42;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   text-transform: capitalize;
   font-style: italic;
 }
