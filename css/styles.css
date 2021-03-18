@@ -34,7 +34,7 @@ h3 {
   margin: 0;
 }
 a {
-  color: #EF233C;
+  color: #D51027;
 }
 a:hover {
   text-decoration: none;
@@ -52,7 +52,7 @@ a:hover {
 /* Download button */
 .btn {
   text-decoration: none;
-  background: #EF233C;
+  background: #D51027;
   color: white;
   padding: 10px;
   display: inline-block;
