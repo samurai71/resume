@@ -4,6 +4,7 @@
   --blueWhite: #EDF2F4;
   --red: #d51027;
   --darkblue: #2B2D42;
+  --white: #ffffff;
 }
 
 /* Global styles
@@ -53,7 +54,7 @@ a:hover {
 .btn {
   text-decoration: none;
   background: var(--red);
-  color: white;
+  color: var(--white);
   padding: 10px;
   display: inline-block;
   border-radius: 5px;
@@ -100,7 +101,7 @@ footer {
 -------------------------*/
 nav {
   text-align: center;
-  background: white;
+  background: var(--white);
   position: fixed;
   top: 0;
   width: 100%;
@@ -191,7 +192,7 @@ p + h3 {
   font-style: normal;
   font-size: 2em;
   line-height: 50px;
-  color: #fff;
+  color: var(--white);
 }
 #button:hover {
   cursor: pointer;
