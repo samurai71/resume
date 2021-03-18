@@ -1,10 +1,10 @@
 
-/* Color Palette
-#2B2D42 - dark blue
-#8D99AE - light blue
-#EDF2F4 - blue/white
-#D51027 - red
-*/
+:root {
+  --blue: #8D99AE;
+  --blueWhite: #EDF2F4;
+  --red: #d51027;
+  --darkblue: #2B2D42;
+}
 
 /* Global styles
 -------------------------*/
@@ -34,7 +34,7 @@ h3 {
   margin: 0;
 }
 a {
-  color: #D51027;
+  color: var(--red);
 }
 a:hover {
   text-decoration: none;
@@ -52,7 +52,7 @@ a:hover {
 /* Download button */
 .btn {
   text-decoration: none;
-  background: #D51027;
+  background: var(--red);
   color: white;
   padding: 10px;
   display: inline-block;
@@ -63,8 +63,8 @@ a:hover {
 /* Header and Footer
 -------------------------*/
 header, footer {
-  background: #2B2D42;
-  color: #8D99AE;
+  background: var(--darkblue);
+  color: var(--blue);
 }
 /* header */
 header {
@@ -72,7 +72,7 @@ header {
   position: relative;
 }
 header h1, header h2 {
-  color: #EDF2F4;
+  color: var(--blueWhite);
   margin: 0;
 }
 .profile-img {
@@ -92,7 +92,7 @@ footer {
 .contact-info a {
   padding: 10px;
   display: inline-block;
-  color: #EDF2F4;
+  color: var(--blueWhite);
 }
 
 
@@ -115,7 +115,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #2B2D42;
+  color: var(--darkblue);
   /*text-decoration: underline;*/
   text-transform: capitalize;
   font-style: italic;
@@ -125,7 +125,7 @@ nav a:hover {
 /* Summary of Qualifications
 -------------------------*/
 .summary {
-  background: #EDF2F4;
+  background: var(--blueWhite);
 }
 h3 ~ p {
   margin: 0;
@@ -142,7 +142,7 @@ h3 ~ p {
 /* Work Experience
 -------------------------*/
 .work {
-  background: #EDF2F4;
+  background: var(--blueWhite);
 }
 h3 ~ p {
   margin: 0;
@@ -170,7 +170,7 @@ p + h3 {
 -------------------------*/
 #button {
   display: inline-block;
-  background-color: #cf2a6a;
+  background-color: var(--red);
   width: 50px;
   height: 50px;
   text-align: center;
