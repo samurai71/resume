@@ -3,7 +3,7 @@
 #2B2D42 - dark blue
 #8D99AE - light blue
 #EDF2F4 - blue/white
-#EF233C - red
+#D51027 - red
 */
 
 /* Global styles
@@ -226,7 +226,7 @@ p + h3 {
   .profile-img {
     width: 200px;
   }
-  MainNav {
+  #mainNav {
     display: none;
   }
 }
@@ -237,12 +237,15 @@ p + h3 {
 
 @media screen and (max-width: 40em) {
     /* #menu is the original menu */
-    .js #menu {
+    /*.js #menu {
         display:none;
     }
 
     .js .slicknav_menu {
         display:block;
+    }*/
+    #mainNav {
+      display: none;
     }
 }
 
