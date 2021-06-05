@@ -245,7 +245,7 @@ p + h3 {
     .js .slicknav_menu {
         display:block;
     }*/
-    #mainNav {
+    #MainNav {
       display: none;
     }
 }
