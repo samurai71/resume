@@ -14,12 +14,7 @@
       href="https://fonts.googleapis.com/css?family=Caveat"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-
-    <!--
-    <link rel="stylesheet" href="SlickNav/dist/slicknav.min.css" />
-    <script src="SlickNav/dist/jquery.slicknav.min.js"></script>-->
-    <!--<link rel="stylesheet" href="/css/slicknav.css">-->
+    <link rel="stylesheet" href="./css/styles.min.css" />
   </head>
   <body>
     <a id="button"></a>
@@ -33,14 +28,6 @@
         <a href="#education">Education</a>
         <a href="#computer">Computer Skills</a>
         <a href="#contact">Contact</a>
-        <!--<ul id="menu">
-          <li><a href="#about">About</a></li>
-          <li><a href="#summary">Summary of Qualifications</a></li>
-          <li><a href="#work">Work Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#computer">Computer Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>-->
       </nav>
 
       <div class="content-wrap">
@@ -252,24 +239,13 @@
         <p>&copy; Copyright 2018 - 2021 by Mark Landeryou</p>
       </div>
     </footer>
-    {% comment %}
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"
-      integrity="sha512-BkBgWiL0N/EFIbLZYGTgbksKG5bS6PtwnWvVk3gccv+KhtK/4wkLxCRGh+kelKiXx7Ey4jfTabLg3AEIPC7ENA=="
-      crossorigin="anonymous"
-    ></script>
-    {% endcomment %}
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"></script>
-    <script src="js/scrollTo-min.js"></script>
-    <script src="js/backToTop-min.js"></script>
-
-    <!--<script src="js/jquery.slicknav.js"></script>
-
-    <script>
-      $(function () {
-        $("#menu").slicknav();
-      });
-    </script>-->
+    <script src="js/scrollTo.js"></script>
+    <script src="js/backToTop.js"></script>
+    {% comment %}
+    <script src="./js/bundle.min.js"></script>
+    {% endcomment %}
   </body>
 </html>
