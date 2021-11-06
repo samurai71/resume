@@ -132,6 +132,14 @@ function img() {
 //     .pipe(gulp.dest("./dist/images/"));
 // }
 
+// copy over the pdf files
+
+function pdf() {
+  const source = "./src/resume.pdf";
+
+  return src(source).pipe(dest("./dist/"));
+}
+
 // Watch files
 
 function watchFiles() {
@@ -155,4 +163,4 @@ function browserSync() {
 // Tasks to define the execution of the functions simultaneously or in series
 
 exports.watch = parallel(watchFiles, browserSync);
-exports.default = series(clear, parallel(js, css, img, html));
+exports.default = series(clear, parallel(js, css, img, html, pdf));
