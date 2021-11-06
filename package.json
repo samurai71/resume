@@ -4,7 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "dev": "gulp",
+    "dev": "gulp && gulp watch",
     "watch": "gulp watch"
   },
   "keywords": [],
