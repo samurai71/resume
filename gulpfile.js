@@ -95,7 +95,7 @@ function css() {
 function img() {
   return (
     src("./src/images/*")
-      /*.pipe(
+      /* .pipe(
         imagemin([
           imagemin.gifsicle({ interlaced: true }),
           //imagemin.mozjpeg({ quality: 75, progressive: true }),
