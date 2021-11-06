@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 const { src, dest, parallel, series, watch } = require("gulp");
 
 // Load plugins
