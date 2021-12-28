@@ -4,12 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve",
+    "watch": "webpack --watch",
+    "build": "NODE_ENV=production webpack",
+    "build-dev": "webpack"
   },
   "keywords": [],
   "author": "Mark Landeryou",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^7.28.0"
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.3",
+    "babel-preset-env": "^1.7.0",
+    "copy-webpack-plugin": "^10.2.0",
+    "css-loader": "^6.5.1",
+    "eslint": "^7.28.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.5",
+    "postcss": "^8.4.5",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.1.0",
+    "webpack": "^5.65.0",
+    "webpack-cleaner": "^0.0.3",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.1"
   }
 }
