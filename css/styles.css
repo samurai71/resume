@@ -1,9 +1,10 @@
-/* Color Palette
-#2B2D42 - dark blue
-#8D99AE - light blue
-#EDF2F4 - blue/white
-#EF233C - red
-*/
+:root {
+  --blue: #8d99ae;
+  --blueWhite: #edf2f4;
+  --red: #d51027;
+  --darkblue: #2b2d42;
+  --white: #ffffff;
+}
 
 /* Global styles
 -------------------------*/
@@ -11,15 +12,18 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
 }
-h1, h2 {
-  font-family: 'Caveat', cursive;
+h1,
+h2 {
+  font-family: "Caveat", cursive;
   font-weight: 400;
 }
 h1 {
@@ -33,7 +37,7 @@ h3 {
   margin: 0;
 }
 a {
-  color: #EF233C;
+  color: var(--red);
 }
 a:hover {
   text-decoration: none;
@@ -51,26 +55,28 @@ a:hover {
 /* Download button */
 .btn {
   text-decoration: none;
-  background: #EF233C;
-  color: white;
+  background: var(--red);
+  color: var(--white);
   padding: 10px;
   display: inline-block;
+  border-radius: 5px;
 }
-
 
 /* Header and Footer
 -------------------------*/
-header, footer {
-  background: #2B2D42;
-  color: #8D99AE;
+header,
+footer {
+  background: var(--darkblue);
+  color: var(--blue);
 }
 /* header */
 header {
   padding-top: 50px;
   position: relative;
 }
-header h1, header h2 {
-  color: #EDF2F4;
+header h1,
+header h2 {
+  color: var(--blueWhite);
   margin: 0;
 }
 .profile-img {
@@ -86,17 +92,18 @@ header h1, header h2 {
 footer {
   text-align: center;
 }
+
 .contact-info a {
   padding: 10px;
   display: inline-block;
+  color: var(--blueWhite);
 }
-
 
 /* Navigation
 -------------------------*/
 nav {
   text-align: center;
-  background: white;
+  background: var(--white);
   position: fixed;
   top: 0;
   width: 100%;
@@ -110,11 +117,17 @@ nav a {
   font-weight: 700;
 }
 
+nav a:hover {
+  color: var(--darkblue);
+  /*text-decoration: underline;*/
+  text-transform: capitalize;
+  font-style: italic;
+}
 
 /* Summary of Qualifications
 -------------------------*/
 .summary {
-  background: #EDF2F4;
+  background: var(--blueWhite);
 }
 h3 ~ p {
   margin: 0;
@@ -125,13 +138,11 @@ h3 ~ p {
 .job-description p:first-of-type {
   margin-top: 0;
 }
-
-
 
 /* Work Experience
 -------------------------*/
 .work {
-  background: #EDF2F4;
+  background: var(--blueWhite);
 }
 h3 ~ p {
   margin: 0;
@@ -143,19 +154,57 @@ h3 ~ p {
   margin-top: 0;
 }
 
-
 /* Education
 -------------------------*/
 .education {
-  background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
-              url(../images/london.jpg) no-repeat fixed;
+  background: linear-gradient(
+      rgba(141, 153, 174, 0.8),
+      rgba(141, 153, 174, 0.5)
+    ),
+    url(../images/london.jpg) no-repeat fixed;
   background-size: cover;
 }
 p + h3 {
   margin-top: 30px;
 }
 
-
+/* Back to Top Function
+-------------------------*/
+#button {
+  display: inline-block;
+  background-color: var(--red);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: var(--white);
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
 
 /* Media Queries
 -------------------------*/
@@ -170,14 +219,32 @@ p + h3 {
     padding-left: 20px;
   }
 }
-@media (max-width: 899px){
+@media (max-width: 899px) {
   header {
     text-align: center;
   }
   .profile-img {
     width: 200px;
   }
-  nav {
+  #MainNav {
+    display: none;
+  }
+}
+
+.slicknav_menu {
+  display: none;
+}
+
+@media screen and (max-width: 40em) {
+  /* #menu is the original menu */
+  /*.js #menu {
+        display:none;
+    }
+
+    .js .slicknav_menu {
+        display:block;
+    }*/
+  #MainNav {
     display: none;
   }
 }
