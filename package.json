@@ -10,6 +10,6 @@
   "author": "Mark Landeryou",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^7.28.0"
+    "eslint": "^9.39.1"
   }
 }
